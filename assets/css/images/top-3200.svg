@@ -1,11 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3200px" height="460px" viewBox="0 0 3200 460" zoomAndPan="disable">
 
-    <style type="text/css"><![CDATA[
+    <!-- <style type="text/css"><![CDATA[
 		line { stroke-width: 1px; }
 		line.upper { stroke: rgba(224,224,224,0.15); }
 		line.lower { stroke: rgba(224,224,224,0.75); }
 		polygon.one { fill: #f8f8f8; }
 		polygon.two { fill: #ffffff; }
+    ]]></style>	 -->
+
+	<style type="text/css"><![CDATA[
+		line { stroke-width: 1px; }
+		line.upper { stroke: rgba(224,224,224,0.75); }
+		line.lower { stroke: rgba(224,224,224,0.75); }
+		polygon.one { fill: #000000; }
+		polygon.two { fill: #171717; }
     ]]></style>	
 
 	<!-- Backgrounds -->

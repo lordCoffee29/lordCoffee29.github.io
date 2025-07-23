@@ -2178,7 +2178,8 @@ input, select, textarea {
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
-			background-image: url("images/overlay.png");
+			/* This is the select overlay */
+			background-image: url("images/blackbck.jpg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -2642,7 +2643,7 @@ input, select, textarea {
 			}
 
 		.feature:before {
-			background: blue;
+			background: rgb(0, 0, 140);
 			content: '';
 			display: inline-block;
 			height: 100%;
@@ -2706,7 +2707,7 @@ input, select, textarea {
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+		background-image: url("images/top-3200.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -2743,7 +2744,7 @@ input, select, textarea {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #4eb980;
+				color: #00f472;
 			}
 
 		#header strong, #header b {
@@ -2759,13 +2760,15 @@ input, select, textarea {
 		#header input[type="button"],
 		#header .button {
 			background: #ffffff;
-			color: #544d55;
+			color: #554e4d;
 		}
 
+		/* Icon in middle of front page */
 		#header .logo {
-			background: #4eb980;
+			/* Logo background color */
+			background: #171717;
 			border-radius: 100%;
-			color: #ffffff;
+			color: #aaaaaa;
 			cursor: default;
 			display: inline-block;
 			font-size: 2.25em;
@@ -2796,7 +2799,8 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		/* Footer color */
+		background-color: #171717;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
@@ -2911,6 +2915,7 @@ input, select, textarea {
 	}
 
 		#main:before {
+			/* Vertical lines on main page */
 			background: rgba(224, 224, 224, 0.75);
 			content: '';
 			height: 100%;
@@ -2923,6 +2928,7 @@ input, select, textarea {
 
 		#main header.major,
 		#main footer.major {
+			/* Top banner color */
 			background: #ffffff;
 		}
 
@@ -2934,6 +2940,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 14pt;
+				background-color: #171717;
 			}
 
 			h2 {
@@ -2974,6 +2981,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
+				background-color: #171717;
 				font-size: 13pt;
 			}
 
@@ -3022,7 +3030,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
-				background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+				background-image: url("images/top-1600.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
 				background-size: 1600px 230px,					auto,							cover;
 				padding: 6em 0 12em 0;
 			}
@@ -3144,7 +3152,8 @@ input, select, textarea {
 		/* Feature */
 
 			.feature {
-				background: #ffffff;
+				/* Item text bg color */
+				background: #171717;
 				display: block;
 				height: auto;
 				margin-bottom: 2em;
@@ -3174,7 +3183,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+				background-image: url("images/top-1280.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
 				background-size: 1280px 184px,						auto,							cover;
 				padding: 3em 0 7em 0;
 			}
