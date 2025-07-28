@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  #container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    overflow: hidden; /* ⬅ Prevent tooltip from overflowing */
+  }
+  
+  #background {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction to bubble to hitboxes */
+  }
+  
+  polygon.hitbox {
+    fill: transparent;
+    /* stroke: rga(0,0,0,0); */
+    stroke: red; /* For testing purposes */
+    stroke-width: 2;
+    pointer-events: auto;
+  }
+  
+  .hitbox-mode circle.dot {
+    fill: #33bbff;
+    r: 5;
+  }
+  
+  #tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  #tooltip-line {
+    stroke: #33bbff; /* Old */
+    stroke-width: 2;
+  }
+  
+  #tooltip-line-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* stroke: #33bbff; */
+  }
+  
+  #tooltip-text {
+    position: absolute;
+    background: #fff;
+    border: 2px solid #33bbff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    transform: translate(-50%, -50%); /* center more cleanly */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #toggle-hitbox {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 20;
+    padding: 8px 12px;
+  }
+  

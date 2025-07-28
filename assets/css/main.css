@@ -2718,7 +2718,7 @@ input, select, textarea {
 	}
 
 		#header:before, #header:after {
-			background: rgba(224, 224, 224, 0.75);
+			background: rgb(0, 0, 0);
 			content: '';
 			left: 50%;
 			position: absolute;
@@ -2727,16 +2727,19 @@ input, select, textarea {
 		}
 
 		#header:before {
+			/* background: rgba(255, 255, 255, 0.75); */
 			height: calc(100% - 50px);
 			opacity: 0.15;
 			top: 0;
 		}
 
 		#header:after {
+			background: rgba(255, 255, 255, 0.75);
 			bottom: 0;
 			height: 50px;
 		}
 
+		/* Link styling for header */
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.35);
 			color: rgba(255, 255, 255, 0.8);
@@ -2823,7 +2826,7 @@ input, select, textarea {
 	}
 
 		#footer:before {
-			background: rgba(224, 224, 224, 0.75);
+			background: rgba(255, 255, 255, 0.75);
 			content: '';
 			height: calc(460px + 6em);
 			left: 50%;
@@ -3040,6 +3043,7 @@ input, select, textarea {
 			}
 
 				#header:before {
+					/* background: rgba(255, 255, 255, 0.75); */
 					height: calc(100% - 25px);
 				}
 
@@ -3197,6 +3201,7 @@ input, select, textarea {
 			}
 
 				#header:before {
+					/* background: rgba(255, 255, 255, 0.75); */
 					height: calc(100% - 20px);
 				}
 

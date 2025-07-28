@@ -10,8 +10,8 @@
 
 	<style type="text/css"><![CDATA[
 		line { stroke-width: 1px; }
-		line.upper { stroke: rgba(224,224,224,0.75); }
-		line.lower { stroke: rgba(224,224,224,0.75); }
+		line.upper { stroke: rgba(255,255,255,0.75); }
+		line.lower { stroke: rgba(255,255,255,0.75); }
 		polygon.one { fill: #000000; }
 		polygon.two { fill: #171717; }
     ]]></style>	
