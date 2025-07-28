@@ -62,30 +62,36 @@ document.querySelectorAll(".hitbox").forEach((polygon) => {
   polygon.addEventListener("mouseenter", () => {
     if (!hitboxMode) return;
   
-    const tooltipMsg = polygon.dataset.tooltip;
     const [cx, cy] = polygon.dataset.center.split(',').map(Number);
+    const tooltipMsg = polygon.dataset.tooltip;
   
-    const container = document.getElementById("container");
+    const wrapper = document.querySelector(".hitbox-wrapper");
+    const svg = document.getElementById("overlay");
+    const bbox = svg.getBoundingClientRect();
   
+    const scaleX = bbox.width / 800; // based on viewBox
+    const scaleY = bbox.height / 600;
+  
+    const pixelX = cx * scaleX;
+    const pixelY = cy * scaleY;
+  
+    let tooltipX = pixelX + 40;
+    let tooltipY = pixelY - 40;
+  
+    // TEMP position to measure
     tooltipText.textContent = tooltipMsg;
-  
-    let tooltipX = cx + 40;
-    let tooltipY = cy - 40;
-  
-    // Temporarily position it
     tooltipText.style.left = `${tooltipX}px`;
     tooltipText.style.top = `${tooltipY}px`;
     tooltipText.style.display = 'block';
   
-    // Measure and adjust to prevent overflow
     const tooltipRect = tooltipText.getBoundingClientRect();
-    const containerRect = container.getBoundingClientRect();
+    const wrapperRect = wrapper.getBoundingClientRect();
   
-    if (tooltipX + tooltipRect.width > containerRect.width) {
-      tooltipX = containerRect.width - tooltipRect.width - 10;
+    if (tooltipX + tooltipRect.width > wrapperRect.width) {
+      tooltipX = wrapperRect.width - tooltipRect.width - 10;
     }
-    if (tooltipY + tooltipRect.height > containerRect.height) {
-      tooltipY = containerRect.height - tooltipRect.height - 10;
+    if (tooltipY + tooltipRect.height > wrapperRect.height) {
+      tooltipY = wrapperRect.height - tooltipRect.height - 10;
     }
     if (tooltipX < 0) tooltipX = 10;
     if (tooltipY < 0) tooltipY = 10;
@@ -93,13 +99,14 @@ document.querySelectorAll(".hitbox").forEach((polygon) => {
     tooltipText.style.left = `${tooltipX}px`;
     tooltipText.style.top = `${tooltipY}px`;
   
-    tooltipLine.setAttribute("x1", cx);
-    tooltipLine.setAttribute("y1", cy);
+    tooltipLine.setAttribute("x1", pixelX);
+    tooltipLine.setAttribute("y1", pixelY);
     tooltipLine.setAttribute("x2", tooltipX + 10);
     tooltipLine.setAttribute("y2", tooltipY + 10);
   
     tooltip.classList.remove("hidden");
   });
+  
   
   polygon.addEventListener("mouseleave", () => {
     tooltip.classList.add("hidden");
