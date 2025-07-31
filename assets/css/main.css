@@ -192,6 +192,7 @@ input, select, textarea {
 	}
 
 		.container.medium {
+			/* background-image: url("images/Header2.jpeg"); */
 			width: 38.25em;
 		}
 
@@ -1975,6 +1976,7 @@ input, select, textarea {
 		}
 
 		header.major {
+			/* background-image: url("images/Header2.jpeg"); */
 			border-bottom-width: 1px;
 			border-color: rgba(224, 224, 224, 0.75);
 			border-style: solid;
@@ -1985,6 +1987,7 @@ input, select, textarea {
 		}
 
 			header.major:before, header.major:after {
+				/* background-image: url("images/Header2.jpeg"); */
 				background: rgba(224, 224, 224, 0.75);
 				content: '';
 				display: block;
@@ -2624,6 +2627,7 @@ input, select, textarea {
 		}
 
 		.feature h3, .feature h4, .feature h5, .feature h6 {
+			color: white;
 			text-align: inherit;
 		}
 
@@ -2666,6 +2670,7 @@ input, select, textarea {
 			}
 
 		.feature.left {
+			color: white;
 			text-align: left;
 		}
 
@@ -2683,6 +2688,7 @@ input, select, textarea {
 			}
 
 		.feature.right {
+			color: white;
 			text-align: right;
 		}
 
@@ -2707,7 +2713,7 @@ input, select, textarea {
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+		background-image: url("images/top-3200.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -2804,7 +2810,7 @@ input, select, textarea {
 		/* background-attachment: scroll; */
 		/* Footer color */
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/bottom-3200.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+		background-image: url("images/bottom-3200.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 		background-position: top center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -3037,7 +3043,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
-				background-image: url("images/top-1600.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+				background-image: url("images/top-1600.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 				background-size: 1600px 230px,					auto,							cover;
 				padding: 6em 0 12em 0;
 			}
@@ -3063,7 +3069,7 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll,							scroll,					fixed;
-				background-image: url("images/bottom-1600.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+				background-image: url("images/bottom-1600.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 				background-position: top center,					top left,				center center;
 				background-repeat: repeat-x,						repeat,					no-repeat;
 				background-size: 1600px 230px,					auto,					cover;
@@ -3195,7 +3201,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-image: url("images/top-1280.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+				background-image: url("images/top-1280.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 				background-size: 1280px 184px,						auto,							cover;
 				padding: 3em 0 7em 0;
 			}
@@ -3225,7 +3231,7 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll,							scroll,					fixed;
-				background-image: url("images/bottom-1280.svg"), url("images/blackbck.jpg"), url("../../images/header.jpg");
+				background-image: url("images/bottom-1280.svg"), url("images/Header3.jpg"), url("../../images/header.jpg");
 				background-position: top center,					top left,				center center;
 				background-repeat: repeat-x,						repeat,					no-repeat;
 				background-size: 1280px 184px,					auto,					cover;
